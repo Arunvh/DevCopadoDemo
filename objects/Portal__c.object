@@ -143,57 +143,137 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>create for Demo purpose</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Field_Five__c</fullName>
+        <fullName>Active__c</fullName>
         <defaultValue>false</defaultValue>
-        <label>Field Five</label>
+        <label>Active</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Field_One__c</fullName>
-        <defaultValue>false</defaultValue>
-        <label>Field One</label>
+        <fullName>Client_city__c</fullName>
+        <defaultValue>true</defaultValue>
+        <label>Client city</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Field_Two__c</fullName>
+        <fullName>Client_street__c</fullName>
+        <defaultValue>true</defaultValue>
+        <label>Client street</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <label>Country</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Emirates</fullName>
+                    <default>false</default>
+                    <label>Emirates</label>
+                </value>
+                <value>
+                    <fullName>India</fullName>
+                    <default>false</default>
+                    <label>India</label>
+                </value>
+                <value>
+                    <fullName>Uk</fullName>
+                    <default>false</default>
+                    <label>Uk</label>
+                </value>
+                <value>
+                    <fullName>Us</fullName>
+                    <default>false</default>
+                    <label>Us</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Portal_name__c</fullName>
+        <caseSensitive>false</caseSensitive>
         <externalId>false</externalId>
-        <label>Field Two</label>
-        <required>false</required>
+        <label>Portal name</label>
+        <length>50</length>
+        <required>true</required>
         <trackTrending>false</trackTrending>
-        <type>Email</type>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <label>State</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>KA</fullName>
+                    <default>false</default>
+                    <label>KA</label>
+                </value>
+                <value>
+                    <fullName>Mh</fullName>
+                    <default>false</default>
+                    <label>Mh</label>
+                </value>
+                <value>
+                    <fullName>MP</fullName>
+                    <default>false</default>
+                    <label>MP</label>
+                </value>
+                <value>
+                    <fullName>Tl</fullName>
+                    <default>false</default>
+                    <label>Tl</label>
+                </value>
+                <value>
+                    <fullName>UP</fullName>
+                    <default>false</default>
+                    <label>UP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Zip_code__c</fullName>
+        <externalId>false</externalId>
+        <label>Zip code</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
-    <label>Demo Object</label>
+    <label>Portal</label>
     <nameField>
-        <label>Demo Custom  Name</label>
+        <label>Portal Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Demo Objects</pluralLabel>
+    <pluralLabel>Portals</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
-    <validationRules>
-        <fullName>DemoValidationRuleOne</fullName>
-        <active>true</active>
-        <description>created for Demo.</description>
-        <errorConditionFormula>AND(
- Field_One__c,
- ISBLANK(Field_Two__c)
-)</errorConditionFormula>
-        <errorMessage>Please enter Field two if Field one is checked.</errorMessage>
-    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

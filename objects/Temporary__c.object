@@ -142,8 +142,7 @@
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>create for Demo purpose</description>
+    <deploymentStatus>InDevelopment</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -154,46 +153,13 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <fields>
-        <fullName>Field_Five__c</fullName>
-        <defaultValue>false</defaultValue>
-        <label>Field Five</label>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Field_One__c</fullName>
-        <defaultValue>false</defaultValue>
-        <label>Field One</label>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Field_Two__c</fullName>
-        <externalId>false</externalId>
-        <label>Field Two</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Email</type>
-        <unique>false</unique>
-    </fields>
-    <label>Demo Object</label>
+    <label>Temporary</label>
     <nameField>
-        <label>Demo Custom  Name</label>
+        <label>Temporary Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Demo Objects</pluralLabel>
+    <pluralLabel>Temporaries</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
-    <validationRules>
-        <fullName>DemoValidationRuleOne</fullName>
-        <active>true</active>
-        <description>created for Demo.</description>
-        <errorConditionFormula>AND(
- Field_One__c,
- ISBLANK(Field_Two__c)
-)</errorConditionFormula>
-        <errorMessage>Please enter Field two if Field one is checked.</errorMessage>
-    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

@@ -143,57 +143,159 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>create for Demo purpose</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Field_Five__c</fullName>
-        <defaultValue>false</defaultValue>
-        <label>Field Five</label>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <label>Active</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Field_One__c</fullName>
-        <defaultValue>false</defaultValue>
-        <label>Field One</label>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Field_Two__c</fullName>
+        <fullName>City__c</fullName>
         <externalId>false</externalId>
-        <label>Field Two</label>
+        <label>City</label>
+        <length>20</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>Email</type>
+        <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>Demo Object</label>
-    <nameField>
-        <label>Demo Custom  Name</label>
+    <fields>
+        <fullName>Country__c</fullName>
+        <label>Country</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In</fullName>
+                    <default>false</default>
+                    <label>In</label>
+                </value>
+                <value>
+                    <fullName>Uk</fullName>
+                    <default>false</default>
+                    <label>Uk</label>
+                </value>
+                <value>
+                    <fullName>Us</fullName>
+                    <default>false</default>
+                    <label>Us</label>
+                </value>
+                <value>
+                    <fullName>Em</fullName>
+                    <default>false</default>
+                    <label>Em</label>
+                </value>
+                <value>
+                    <fullName>Ko</fullName>
+                    <default>false</default>
+                    <label>Ko</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_name__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Project name</label>
+        <length>20</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
         <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <label>State</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mh</fullName>
+                    <default>false</default>
+                    <label>Mh</label>
+                </value>
+                <value>
+                    <fullName>Tn</fullName>
+                    <default>false</default>
+                    <label>Tn</label>
+                </value>
+                <value>
+                    <fullName>An</fullName>
+                    <default>false</default>
+                    <label>An</label>
+                </value>
+                <value>
+                    <fullName>Ke</fullName>
+                    <default>false</default>
+                    <label>Ke</label>
+                </value>
+                <value>
+                    <fullName>Gj</fullName>
+                    <default>false</default>
+                    <label>Gj</label>
+                </value>
+                <value>
+                    <fullName>Up</fullName>
+                    <default>false</default>
+                    <label>Up</label>
+                </value>
+                <value>
+                    <fullName>Mp</fullName>
+                    <default>false</default>
+                    <label>Mp</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zip_code__c</fullName>
+        <externalId>false</externalId>
+        <label>Zip code</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <label>objectproject</label>
+    <nameField>
+        <displayFormat>P-{000}</displayFormat>
+        <label>objectproject Name</label>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Demo Objects</pluralLabel>
+    <pluralLabel>objectprojects</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
-    <validationRules>
-        <fullName>DemoValidationRuleOne</fullName>
-        <active>true</active>
-        <description>created for Demo.</description>
-        <errorConditionFormula>AND(
- Field_One__c,
- ISBLANK(Field_Two__c)
-)</errorConditionFormula>
-        <errorMessage>Please enter Field two if Field one is checked.</errorMessage>
-    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>
